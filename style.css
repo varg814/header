@@ -12,7 +12,7 @@ body {
   justify-content: center;
 }
 
-i{
+i {
   color: #3db2ff;
   cursor: pointer;
 }
@@ -413,7 +413,7 @@ select {
   }
 
   .header-section2 {
-    height: 400px;
+    height: 480px;
   }
 }
 @media (max-width: 375px) {
@@ -431,9 +431,6 @@ select {
 
   .header-section3-form-group {
     gap: 25px;
-  }
-  .header-section2 {
-    height: 480px;
   }
 
   .header-section2.active {
