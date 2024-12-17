@@ -12,6 +12,11 @@ body {
   justify-content: center;
 }
 
+i{
+  color: #3db2ff;
+  cursor: pointer;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -49,6 +54,14 @@ header {
   align-items: center;
   gap: 16px;
   color: #fff;
+}
+
+.header-section1-socials-group1-item > p > a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .header-section1-socials-group2 {
@@ -95,6 +108,8 @@ header {
   padding: 35px 15px;
   color: #fff;
   background-color: #3db2ff;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .header-section1-nav-group2-button > button {
@@ -109,6 +124,13 @@ header {
   font-size: 17px;
   font-weight: 600;
   line-height: 25px;
+}
+
+.header-section1-nav-group2-button > button:hover {
+  background-color: #3d3d3d;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .hamburger {
@@ -133,12 +155,13 @@ header {
 */
 
 .header-section2 {
+  height: 340px;
   width: 100%;
   max-width: 870px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .header-section2-qoute > h1 {
@@ -281,6 +304,13 @@ select {
   line-height: 25px;
 }
 
+.header-section3-form-button > button:hover {
+  background-color: #3d3d3d;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 @media (max-width: 1310px) {
   .header-section3 {
     flex-direction: column-reverse;
@@ -331,11 +361,12 @@ select {
   }
 
   .header-section2 {
+    height: 540px;
     transition: 2s;
   }
 
   .header-section2.active {
-    margin-top: calc(507px);
+    margin-top: 500px;
     transition: 1s;
   }
 
@@ -348,13 +379,14 @@ select {
   header {
     padding: 25px;
     gap: 50px;
+    background-image: linear-gradient(180deg, #3a3a3a 70%, #ffffff 0%);
   }
 }
 
 @media (max-width: 620px) {
   header {
     padding: 15px;
-    background-image: linear-gradient(180deg, #3a3a3a 70%, #ffffff 0%);
+    background-image: linear-gradient(180deg, #3a3a3a 65%, #ffffff 0%);
   }
 
   .header-section1-socials {
@@ -379,10 +411,14 @@ select {
     font-weight: 900;
     line-height: 58px;
   }
+
+  .header-section2 {
+    height: 400px;
+  }
 }
 @media (max-width: 375px) {
   header {
-    background-image: linear-gradient(180deg, #3a3a3a 50%, #ffffff 0%);
+    background-image: linear-gradient(180deg, #3a3a3a 55%, #ffffff 0%);
   }
   .header-section1-nav {
     padding: 15px;
@@ -395,5 +431,13 @@ select {
 
   .header-section3-form-group {
     gap: 25px;
+  }
+  .header-section2 {
+    height: 480px;
+  }
+
+  .header-section2.active {
+    margin-top: 520px;
+    transition: 1s;
   }
 }
